@@ -9,3 +9,8 @@ app.listen(process.env.PORT || 3000, (req, res) => {
 app.get('https://back-for-vercel.vercel.app/', (req, res) => {
   res.send('Hello World!');
 });
+
+app.post('https://back-for-vercel.vercel.app/', (req, res) => {
+  console.log(req.body);
+  res.send('Hello World!');
+});
